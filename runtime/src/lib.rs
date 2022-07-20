@@ -44,6 +44,8 @@ pub use sp_runtime::{Perbill, Permill};
 /// Import the template pallet.
 pub use pallet_template;
 
+pub use pallet_kitties;
+
 /// An index to a block.
 pub type BlockNumber = u32;
 
@@ -285,6 +287,7 @@ construct_runtime!(
 		Sudo: pallet_sudo,
 		// Include the custom logic from the pallet-template in the runtime.
 		TemplateModule: pallet_template,
+		palletKitties: pallet_kitties,
 	}
 );
 
